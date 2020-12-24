@@ -2,25 +2,13 @@
 /* font imports */
 
 @font-face {
-  font-family: 'VeraMono';
-  src: URL('theme/fonts/VeraMono.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Charter';
-  src: URL('theme/fonts/Charter Regular.otf') format('opentype');
-  font-style: normal;
+  font-family: 'Vollkorn';
+  src: URL('theme/fonts/Vollkorn-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Charter';
-  src: URL('theme/fonts/Charter Bold.otf') format('opentype');
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'Charter';
-  src: URL('theme/fonts/Charter Italic.otf') format('opentype');
-  font-style: italic;
+  font-family: 'Fira Code Medium';
+  src: URL('theme/fonts/FiraCode-Medium.ttf') format('truetype');
 }
 
 
@@ -50,7 +38,7 @@ img {
 
 p, li, td, th {
     color: #111111;
-    font-family: 'Charter', 'Source Serif Pro', serif;
+    font-family: 'Vollkorn', 'Source Serif Pro', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -75,7 +63,7 @@ h3 {
 
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Charter', serif;
+    font-family: 'Vollkorn', serif;
     font-size: 22px;
     font-weight: bold;
     color: #333;
@@ -100,7 +88,7 @@ hr {
 }
 
 code {
-    font-family: 'JuliaMono', 'VeraMono', monospace;
+    font-family: 'JuliaMono', 'Fira Code Medium', monospace;
     font-style: normal;
     font-size: 15px;
     padding: 2px;
@@ -230,12 +218,12 @@ div.footnote > p.footnote-title {
 /* # Menu container */
 
 .menu {
-    max-width: var(--content-width);
+    max-width: 20%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: left;
     margin-top: 8px;
     height: 40px;
 }
