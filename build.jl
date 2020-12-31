@@ -18,7 +18,7 @@ function build(which...; theme = THEME_DIR, build = BUILD_DIR, artifact_toml = A
     end
     archive_filename = "$theme_name-$version.tar.gz"
     download_hash = archive_artifact(product_hash, joinpath(build, archive_filename))
-    remote_url = "$url/$theme_name-$version/$archive_filename"
+    remote_url = "$url/v$version/$archive_filename"
     @info "Creating:" theme_name version product_hash archive_filename download_hash remote_url
 
     bind_artifact!(
